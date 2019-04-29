@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="description" content="" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>Hello Gridea | 小苹果的男朋友</title>
+<title>将你的Medium文章导出成Markdown格式 | 小苹果的男朋友</title>
 <link rel="shortcut icon" href="https://chengzhenghao.github.io//favicon.ico?v=1556526823430">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
 <link rel="stylesheet" href="https://chengzhenghao.github.io//styles/main.css">
@@ -76,49 +76,66 @@
         <div class="post-detail">
           <article class="post">
             <h2 class="post-title">
-              Hello Gridea
+              将你的Medium文章导出成Markdown格式
             </h2>
             <div class="post-info">
               <time class="post-time">
-                · 2018-12-12 ·
+                · 2019-04-29 ·
               </time>
               
-                <a href="https://chengzhenghao.github.io//tag/gridea" class="post-tags">
-                  # Gridea
+                <a href="https://chengzhenghao.github.io//tag/markdown" class="post-tags">
+                  # markdown
+                </a>
+              
+                <a href="https://chengzhenghao.github.io//tag/translate" class="post-tags">
+                  # 翻译
                 </a>
               
             </div>
             
-              <div class="post-feature-image" style="background-image: url('https://chengzhenghao.github.io//post-images/hello-gridea.png')">
-              </div>
-            
             <div class="post-content">
-              <p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
-✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
-<!-- more -->
-<p><a href="https://github.com/getgridea/gridea">Github</a><br>
-<a href="http://hvenotes.fehey.com/">Gridea 主页</a><br>
-<a href="http://fehey.com/">示例网站</a></p>
-<h2 id="特性">特性👇</h2>
-<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
-<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
-<p>🏷️  你可以对文章进行标签分组</p>
-<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
-<p>💻  你可以在 <strong>𝖶𝗂𝗇𝖽𝗈𝗐𝗌</strong> 或 <strong>𝖬𝖺𝖼𝖮𝖲</strong> 设备上使用此客户端</p>
-<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
-<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
-<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
-<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
-<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
-<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前🏃</p>
-<p>未来，它一定会成为你离不开的伙伴</p>
-<p>尽情发挥你的才华吧！</p>
-<p>😘 Enjoy~</p>
+              <h2 id="原文链接export-your-medium-posts-to-markdown">原文链接：<a href="https://medium.com/@macropus/export-your-medium-posts-to-markdown-b5ccc8cb0050">Export your Medium posts to Markdown</a></h2>
+<p>这是一个避免复制、粘贴和重写你Medium文章的有效解决方案。</p>
+<p><img src="https://github.com/ChengZhengHao/FE-translator/blob/master/%5B%E8%AF%91%5D%E5%B0%86%E4%BD%A0%E7%9A%84Medium%E6%96%87%E7%AB%A0%E5%AF%BC%E5%87%BA%E6%88%90Markdown/1_i-S80mDrkJQO2tJ_lhYwfA.png" alt=""></p>
+<p>首先，你需要在你的电脑上安装node。</p>
+<p>所有平台都有node安装程序, 只需下载并像安装其他程序一样安装即可:</p>
+<ul>
+<li><a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></li>
+</ul>
+<p>安装完成后, 你可以打开 <strong>Windows</strong> 上的命令提示符(cmd.exe) 或者 <strong>MacOS</strong> 上的终端 或者 <strong>Linux</strong> 去执行这条命令。</p>
+<pre><code>npm install -g mediumexporter
+</code></pre>
+<p>安装 <strong>mediumexporter</strong>. 安装完毕后, 你就可以将Medium文章导出成Markdown格式。</p>
+<p>移动到想要导出文件的目录。</p>
+<p><em><strong>(Windows)</strong></em></p>
+<pre><code>cd c:\Users(username)\Desktop 
+</code></pre>
+<p><em><strong>(Mac)</strong></em></p>
+<pre><code>cd ~/Desktop 
+</code></pre>
+<p>执行下面一行:</p>
+<pre><code>mediumexporter https://medium.com/p/export-your-medium-posts-to-markdown-b5ccc8cb0050 &gt; medium_post.md
+</code></pre>
+<p>你可以看到名为的<strong>medium_post.md</strong>文件，其中文章内容已经被转换为Markdown语法。 你可能需要做一些微调, 不过大多数情况下格式和结构还不错。</p>
+<p>如果你想直接复制到你的粘贴板 (OSX系统) 你可以添加如下内容 <strong>(| pbcopy)</strong> :</p>
+<pre><code>mediumexporter https://medium.com/p/export-your-medium-posts-to-markdown-b5ccc8cb0050 | pbcopy
+</code></pre>
+<p>如果你不喜欢使用命令行操作，这还有 <strong>Chrome 浏览器拓展</strong>, 虽然它又快又好，但是部分结果需要自行编辑:</p>
+<p><strong>https://chrome.google.com/webstore/detail/convert-medium-posts-to-m/aelnflnmpbjgipamcogpdoppjbebnjea?hl=en</strong></p>
 
             </div>
           </article>
         </div>
     
+        
+          <div class="next-post">
+            <div class="next">下一篇</div>
+            <a href="https://chengzhenghao.github.io//post/about">
+              <h3 class="post-title">
+                关于
+              </h3>
+            </a>
+          </div>  
         
 
         
