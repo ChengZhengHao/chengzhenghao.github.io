@@ -2,7 +2,7 @@
 <feed xmlns="http://www.w3.org/2005/Atom">
     <id>https://chengzhenghao.github.io/</id>
     <title>豪门恩怨</title>
-    <updated>2020-02-19T14:30:56.339Z</updated>
+    <updated>2020-02-19T14:34:54.769Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
     <link rel="alternate" href="https://chengzhenghao.github.io/"/>
     <link rel="self" href="https://chengzhenghao.github.io/atom.xml"/>
@@ -39,6 +39,19 @@ myFavoriteNumber = 'seven';
 myFavoriteNumber = 7;
 </code></pre>
 <hr>
+<h3 id="3使用typescript-34中const断言从具有对象的数组中获取类型"><strong>3.使用TypeScript 3.4中const断言从具有对象的数组中获取类型</strong></h3>
+<pre><code class="language-javascript">const locales = [
+  {
+    locale: 'se',
+    language: 'Swedish',
+  },
+  {
+    locale: 'en',
+    language: 'English',
+  }
+] as const;
+type Locale = typeof locales[number]['locale']; // type Locale = &quot;se&quot; | &quot;en&quot;
+</code></pre>
 ]]></content>
     </entry>
     <entry>
