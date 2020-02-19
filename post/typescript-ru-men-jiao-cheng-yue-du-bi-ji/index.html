@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" >
 
-<title>将你的Medium文章导出成Markdown格式 | 豪门恩怨</title>
+<title>TypeScript入门教程阅读笔记 | 豪门恩怨</title>
 <meta name="description" content="永远将自己保持在Beta版本">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -86,49 +86,40 @@
       <div class="sm-12 md-8 col">
         <div class="paper">
           <article class="article">
-            <h1>将你的Medium文章导出成Markdown格式</h1>
+            <h1>TypeScript入门教程阅读笔记</h1>
             <p class="article-meta">
-              2019-04-29
+              2020-02-19
               
-                <a href="https://chengzhenghao.github.io/tag/markdown/" class="badge warning">
-                  markdown
-                </a>
-              
-                <a href="https://chengzhenghao.github.io/tag/translate/" class="badge ">
-                  翻译
+                <a href="https://chengzhenghao.github.io/tag/PyPlX1FKv/" class="badge success">
+                  TypeScript
                 </a>
               
             </p>
             
             <div class="post-content">
-              <h2 id="原文链接export-your-medium-posts-to-markdown">原文链接：<a href="https://medium.com/@macropus/export-your-medium-posts-to-markdown-b5ccc8cb0050">Export your Medium posts to Markdown</a></h2>
-<p>这是一个避免复制、粘贴和重写你Medium文章的有效解决方案。</p>
-<figure data-type="image" tabindex="1"><img src="https://chengzhenghao.github.io//post-images/1556591043286.png" alt="" loading="lazy"></figure>
-<p>首先，你需要在你的电脑上安装node。</p>
-<p>所有平台都有node安装程序, 只需下载并像安装其他程序一样安装即可:</p>
-<ul>
-<li><a href="https://nodejs.org/zh-cn/download/">https://nodejs.org/zh-cn/download/</a></li>
-</ul>
-<p>安装完成后, 你可以打开 <strong>Windows</strong> 上的命令提示符(cmd.exe) 或者 <strong>MacOS</strong> 上的终端 或者 <strong>Linux</strong> 去执行这条命令。</p>
-<pre><code>npm install -g mediumexporter
+              <h2 id="typescript入门教程"><a href="https://ts.xcatliu.com/">TypeScript入门教程</a></h2>
+<h3 id="1null-undefined与void的区别"><strong>1.null、undefined与void的区别</strong></h3>
+<p>与void 的区别是，undefined 和 null 是所有类型的子类型。也就是说 undefined 类型的变量，可以赋值给 number 类型的变量</p>
+<p>注意：需要关闭 --strictNullChecks配置</p>
+<pre><code class="language-javascript">// 这样不会报错
+let num: number = undefined;
+
+// 这样也不会报错
+let u: undefined;
+let num: number = u;
+
+// 报错
+let u: void;
+let num: number = u;
 </code></pre>
-<p>安装 <strong>mediumexporter</strong>. 安装完毕后, 你就可以将Medium文章导出成Markdown格式。</p>
-<p>移动到想要导出文件的目录。</p>
-<p><em><strong>(Windows)</strong></em></p>
-<pre><code>cd c:\Users(username)\Desktop 
+<hr>
+<h3 id="2类型推论"><strong>2.类型推论</strong></h3>
+<p>如果定义的时候没有赋值，不管之后有没有赋值，都会被推断成 any 类型而完全不被类型检查</p>
+<pre><code class="language-javascript">let myFavoriteNumber; // 这里的myFavoriteNumber会被推断为any
+myFavoriteNumber = 'seven';
+myFavoriteNumber = 7;
 </code></pre>
-<p><em><strong>(Mac)</strong></em></p>
-<pre><code>cd ~/Desktop 
-</code></pre>
-<p>执行下面一行:</p>
-<pre><code>mediumexporter https://medium.com/p/export-your-medium-posts-to-markdown-b5ccc8cb0050 &gt; medium_post.md
-</code></pre>
-<p>你可以看到名为的<strong>medium_post.md</strong>文件，其中文章内容已经被转换为Markdown语法。 你可能需要做一些微调, 不过大多数情况下格式和结构还不错。</p>
-<p>如果你想直接复制到你的粘贴板 (OSX系统) 你可以添加如下内容 <strong>(| pbcopy)</strong> :</p>
-<pre><code>mediumexporter https://medium.com/p/export-your-medium-posts-to-markdown-b5ccc8cb0050 | pbcopy
-</code></pre>
-<p>如果你不喜欢使用命令行操作，这还有 <strong>Chrome 浏览器拓展</strong>, 虽然它又快又好，但是部分结果需要自行编辑:</p>
-<p><strong>https://chrome.google.com/webstore/detail/convert-medium-posts-to-m/aelnflnmpbjgipamcogpdoppjbebnjea?hl=en</strong></p>
+<hr>
 
             </div>
           </article>
@@ -139,9 +130,9 @@
               <div class="next">
                 下一篇
               </div>
-              <a href="https://chengzhenghao.github.io/post/about/">
+              <a href="https://chengzhenghao.github.io/post/jiang-ni-de-medium-wen-zhang-dao-chu-cheng-markdown-ge-shi/">
                 <h3 class="post-title">
-                  关于我
+                  将你的Medium文章导出成Markdown格式
                 </h3>
               </a>
             </div>
@@ -210,7 +201,7 @@
     </div>
     <div class="row">
       
-        <a href="https://chengzhenghao.github.io/tag/PyPlX1FKv/" class="badge warning">
+        <a href="https://chengzhenghao.github.io/tag/PyPlX1FKv/" class="badge secondary">
           TypeScript
         </a>
       
